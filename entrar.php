@@ -53,7 +53,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
                 <img src="img/pipoca.png" alt="logo">
 
                 <label for="email">Email: </label>
-                <input type="text" name="email">
+                <input type="email" name="email">
 
                 <label for="senha">senha: </label>
                 <input type="password" name="senha">

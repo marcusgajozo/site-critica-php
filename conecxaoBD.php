@@ -20,7 +20,7 @@ try{
         id_usuario INTEGER NULL,
         comentario VARCHAR (200) NOT NULL);
         
-        INSERT INTO usuario(nome, email, senha) VALUES ('admin', 'admin', 'admin');";
+        INSERT INTO usuario(nome, email, senha) VALUES ('admin', 'admin@email.com', 'admin');";
     
     $database-> exec ("$sql");
 }catch(PDOException $e){
