@@ -49,7 +49,9 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
     <main>
         <section class="section_form">
             <form class="form_ec " action="" method="post">
+                
                 <img src="img/pipoca.png" alt="logo">
+
                 <label for="email">Email: </label>
                 <input type="email" name="email">
 
@@ -59,10 +61,6 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
                 <button type="submit">Entrar</button>
 
                 <a href="cadastro.php">Cadastrar-se</a>
-                <a href="cadastro.php">Cadastrar-se</a>
-                <a href="cadastro.php">Cadastrar-se</a>
-                <a href="cadastro.php">Cadastrar-se</a>
-
             </form>
         </section>
     </main>

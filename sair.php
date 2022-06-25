@@ -5,4 +5,4 @@ if (!isset($_SESSION)) {
 
 session_destroy();
 
-header("Location: entrar.php");
+header("Location: index.php");
