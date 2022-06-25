@@ -50,10 +50,6 @@ if (isset($_POST['titulo']) || isset($_POST['ano']) || isset($_POST['sinopse']))
                         <label for="sinopse">Sinopse:</label>
                         <input type="text" name="sinopse" placeholder="insira a sinopse" class="form-control"/>
                     </div>
-                    <div class="form-group">
-                        <label for="capa">Capa do Filme</label>
-                        <input type="file" name="capa" placeholder="insira a imagem" class="form-control"/>
-                    </div>
                     <div class="form-group" align="center">
                         <button type="submit" class="btn btn-info">Cadastrar</button>
                     </div>
