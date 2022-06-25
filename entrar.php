@@ -47,22 +47,24 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
 <body>
     <main>
-        <section class="section_form">
-            <form class="form_ec " action="" method="post">
-                
-                <img src="img/pipoca.png" alt="logo">
+        <div class="container">
+            <h2 align="center">Cadastro de Usuário</h2>
+            <div class="col-md-4" style="margin:0 auto; float:none;">
+                <form class="form_ec " action="" method="post">
+                    
+                    <img src="img/pipoca.png" alt="logo">
 
-                <label for="email">Email: </label>
-                <input type="email" name="email">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email">
 
-                <label for="senha">senha: </label>
-                <input type="password" name="senha">
+                    <label for="senha">senha: </label>
+                    <input type="password" name="senha">
 
-                <button type="submit">Entrar</button>
+                    <button type="submit">Entrar</button>
 
-                <a href="cadastro.php">Cadastrar-se</a>
-            </form>
-        </section>
+                    <a href="cadastro.php">Cadastrar-se</a>
+                </form>
+        </div>
     </main>
 </body>
 
