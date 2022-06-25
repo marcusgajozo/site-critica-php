@@ -21,7 +21,7 @@ if (!isset($_SESSION)) {
     <header>
         <div class="menu">
             <div id="logo">
-                <img src="img/pipoca.png" alt="Logo">
+                <a href="index.php"><img src="img/pipoca.png" alt="Logo"></a>
             </div>
             <?php
             if (!isset($_SESSION['id'])) {
@@ -72,6 +72,11 @@ if (!isset($_SESSION)) {
                 header("Location: entrar.php");
             } else {
                 $id_filme = $_GET['id_filme'];
+
+                function getIdFilme($id_filme){
+                    return $id_filme;
+                }
+
                 $info_filme = $database->query("SELECT * FROM filme WHERE id = '$id_filme';");
                 $comentario = $database->query("SELECT nome, comentario FROM filme f
                                                 INNER JOIN comentario c
