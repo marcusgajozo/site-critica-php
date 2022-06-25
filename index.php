@@ -49,7 +49,8 @@ if (!isset($_SESSION)) {
     <main>
         <section>
             <?php if (!isset($_GET['id_filme'])) { ?>
-                <h1 style="text-align: center;">Críticas de Filmes</h1>
+                <h1 style="text-align: center;
+                margin-top: 40px;">Críticas de Filmes</h1>
                 <div class="lista_filmes">
                     <?php
                     $filme = $database->query("SELECT id, titulo  FROM filme;");
