@@ -27,35 +27,39 @@ if (isset($_POST['titulo']) || isset($_POST['ano']) || isset($_POST['sinopse']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Filme - Site Critica</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <main>
-        <section>
-            <h1>Cadastro de Filme</h1>
-            <form action="" method="post">
-                <p>
-                    <label for="titulo">Titulo do Filme:</label>
-                    <input type="text" name="titulo">
-                </p>
-                <p>
-                    <label for="ano">Ano de Lançamento:</label>
-                    <input type="text" name="ano">
-                </p>
-                <p>
-                    <label for="sinopse">Sinopse:</label>
-                    <input type="text" name="sinopse">
-                </p>
-                <p>
-                    <label for="capa">Capa do Filme</label>
-                    <input type="file" name="capa">
-                </p>
-                <p>
-                    <button type="submit">Cadastrar</button>
-                </p>
-            </form>
-        </section>
+        <div class="container">
+            <h2 align="center">Cadastro de Filme</h2>
+            <div class="col-md-5" style="margin:0 auto; float:none;">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="titulo">Titulo do Filme:</label>
+                        <input type="text" name="titulo" placeholder="insira o título" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="ano">Ano de Lançamento:</label>
+                        <input type="text" name="ano" placeholder="insira o ano" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="sinopse">Sinopse:</label>
+                        <input type="text" name="sinopse" placeholder="insira a sinopse" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="capa">Capa do Filme</label>
+                        <input type="file" name="capa" placeholder="insira a imagem" class="form-control"/>
+                    </div>
+                    <div class="form-group" align="center">
+                        <button type="submit" class="btn btn-info">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 

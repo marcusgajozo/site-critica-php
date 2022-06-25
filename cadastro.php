@@ -51,29 +51,42 @@ if (isset($_POST['nome']) || isset($_POST['email']) || isset($_POST['senha'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Site Critica</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <main>
-        <section class="section_form">
-            <form class="form_ec " action="" method="post">
-                <img src="img/pipoca.png" alt="logo">
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome">
+        <div class="container">
+            <h2 align="center">Cadastro de Usuário</h2>
+            <div class="col-md-4" style="margin:0 auto; float:none;">
+                <form class="form_ec " action="" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" placeholder="insira o título" class="form-control"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" placeholder="insira o título" class="form-control"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha">senha: </label>
+                        <input type="password" name="senha" placeholder="insira o título" class="form-control"/>
+                    </div>
 
-                <label for="email">Email: </label>
-                <input type="email" name="email">
+                    <div class="form-group" align="center">
+                        <button type="submit" class="btn btn-info">Cadastrar</button>
+                    </div>
 
-
-                <label for="senha">senha: </label>
-                <input type="password" name="senha">
-
-
-                <button type="submit">Cadastrar</button>
-                <a href="entrar.php">Já possuo uma conta</a>
-            </form>
-        </section>
+                    <div class="form-group" align="center">
+                        <a href="entrar.php">Já possuo uma conta</a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 
