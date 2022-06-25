@@ -92,7 +92,7 @@ if (!isset($_SESSION)) {
                     <h2  align="left"><?php echo $filme['titulo']; ?></h2>
                     <p>Ano de Lançamento:<?php echo $filme['ano']; ?></p>
                     <p>Sinopse: <?php echo $filme['sinopse']; ?></p>
-                    <h3>Área de Comentário</h3>
+                    <h4><b>Área de Comentário</b></h3>
                     <?php
                     while ($linha = $comentario->fetch()) {
                     ?>
@@ -126,6 +126,7 @@ if (!isset($_SESSION)) {
                         ':id_usuario' => $_SESSION['id'],
                         ':comentario' => $_POST['comentario']
                     ));
+                    header("Refresh: 0");
                 }
             }
             ?>
@@ -133,7 +134,6 @@ if (!isset($_SESSION)) {
     </main>
     <footer>
     </footer>
-
 </body>
 
 </html>

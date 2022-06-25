@@ -25,13 +25,6 @@ img {
     display: block;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-}
-
 a {
     text-decoration: none;
     color: #000;
@@ -39,7 +32,6 @@ a {
 
 .section_form{
     background-color: #2E294E;
-    /* max-width: 400px; */
     margin: 0 auto;
 }
 
