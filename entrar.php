@@ -42,27 +42,49 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Site Critica</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="menu">
+            <div id="logo">
+                <a href="index.php"><img src="img/pipoca.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <a href="index.php">Voltar</a>
+            </nav>
+        </div>
+    </header>
+
     <main>
-        <section class="section_form">
-            <form class="form_ec " action="" method="post">
-                
-                <img src="img/pipoca.png" alt="logo">
+        <div class="container">
+            <h2 align="center">Login</h2>
+            <div class="col-md-4" style="margin:0 auto; float:none;">
+                <form class="form_ec " action="" method="post">
+                    <div class="form-group">    
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" placeholder="insira o email" class="form-control"/>
+                    </div>
 
-                <label for="email">Email: </label>
-                <input type="email" name="email">
-
-                <label for="senha">senha: </label>
-                <input type="password" name="senha">
-
-                <button type="submit">Entrar</button>
-
-                <a href="cadastro.php">Cadastrar-se</a>
-            </form>
-        </section>
+                    <div class="form-group">
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="senha" placeholder="insira a senha" class="form-control"/>
+                    </div>
+                    
+                    <div class="form-group" align="center">
+                        <button type="submit" class="btn btn-info">Entrar</button>
+                    </div>
+                    
+                    <div class="form-group" align="center">
+                        <a href="cadastro.php">Cadastrar-se</a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 

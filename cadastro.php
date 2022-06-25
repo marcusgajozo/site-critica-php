@@ -53,10 +53,22 @@ if (isset($_POST['nome']) || isset($_POST['email']) || isset($_POST['senha'])) {
     <title>Cadastro - Site Critica</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+   <header>
+        <div class="menu">
+            <div id="logo">
+                <a href="index.php"><img src="img/pipoca.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <a href="index.php">Voltar</a>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <div class="container">
             <h2 align="center">Cadastro de Usuário</h2>
