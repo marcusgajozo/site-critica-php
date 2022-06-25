@@ -26,7 +26,6 @@ try{
             INSERT INTO usuario(nome, email, senha) VALUES ('admin', 'admin@email.com', 'admin');";
         
         $database-> exec ("$sql");
-        echo "entrei";
     }else{
         $database = new PDO('sqlite:database.db');
         $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
