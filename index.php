@@ -88,31 +88,32 @@ if (!isset($_SESSION)) {
                                                 WHERE f.id = '$id_filme';");
                 $filme = $info_filme->fetch();
             ?>
-                <h1><?php echo $filme['titulo']; ?></h1>
-                <p>Ano de Lançamento:<?php echo $filme['ano']; ?></p>
-                <p>Sinopse: <?php echo $filme['sinopse']; ?></p>
-                <h3>Área de Comentário</h3>
-                <?php
-                while ($linha = $comentario->fetch()) {
-                ?>
-                    <div>
+                <div class="container">
+                    <h2  align="left"><?php echo $filme['titulo']; ?></h2>
+                    <p>Ano de Lançamento:<?php echo $filme['ano']; ?></p>
+                    <p>Sinopse: <?php echo $filme['sinopse']; ?></p>
+                    <h3>Área de Comentário</h3>
+                    <?php
+                    while ($linha = $comentario->fetch()) {
+                    ?>
                         <div>
                             <b><?php echo $linha['nome']; ?></b>
+                            <p>
+                                <?php echo $linha['comentario']; ?>
+                            </p>
                         </div>
-                        <div>
-                            <?php echo $linha['comentario']; ?>
-                        </div>
+                    <?php
+                    }
+                    ?>
+                    <br>
+                    <div class="form-group">
+                        <form action="" method="post">
+                            <label for="comentario">Comentário</label>
+                            <input type="text" name="comentario" placeholder="insira o comentário">
+                            <button type="submit" class="btn btn-info">Enviar</button>
+                        </form>
                     </div>
-                <?php
-                }
-                ?>
-                <p>
-                <form action="" method="post">
-                    <label for="comentario">Comentário</label>
-                    <input type="text" name="comentario">
-                    <button type="submit">Enviar</button>
-                </form>
-                </p>
+                </div>
             <?php
             }
             if (isset($_POST['comentario'])) {
