@@ -18,7 +18,9 @@ try{
         CREATE TABLE IF NOT EXISTS comentario (
         id_filme INTEGER NOT NULL,
         id_usuario INTEGER NULL,
-        comentario VARCHAR (200) NOT NULL);";
+        comentario VARCHAR (200) NOT NULL);
+        
+        INSERT INTO usuario(nome, email, senha) VALUES ('admin', 'admin', 'admin');";
     
     $database-> exec ("$sql");
 }catch(PDOException $e){

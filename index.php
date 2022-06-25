@@ -33,8 +33,12 @@ if (!isset($_SESSION)) {
             <?php
             } else {
             ?>
-                <nav>
+                <nav>                    
                     <a><?php echo $_SESSION['nome'] ?></a>
+                    <?php if($_SESSION['nome'] == 'admin'){
+                        echo '<a href="cadastroFilme.php">Cadastrar filme</a>';
+                    }
+                    ?>
                     <a id="sair" href="sair.php">Sair</a>
                 </nav>
             <?php
